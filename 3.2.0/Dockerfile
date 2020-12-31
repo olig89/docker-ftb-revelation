@@ -18,9 +18,9 @@ USER root
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-	wget --no-check-certificate https://media.forgecdn.net/files/2778/975/FTBRevelationServer_3.2.0.zip && \
-	unzip FTBRevelationServer_3.2.0.zip && \
-	rm FTBRevelationServer_3.2.0.zip && \
+	wget --no-check-certificate https://www.curseforge.com/minecraft/modpacks/ftb-revelation/download/3133852/file && \
+	unzip FTB+Revelation-3.4.0.zip && \
+	rm FTB+Revelation-3.4.0.zip && \
 	chmod u+x FTBInstall.sh ServerStart.sh && \
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt && \
 	echo "$(date)" >> eula.txt && \
